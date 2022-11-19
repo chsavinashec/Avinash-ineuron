@@ -1,0 +1,168 @@
+## Assignment Part-1
+Q1. Why do we call Python as a general purpose and high-level programming language?
+A.)	Python is a general-purpose language, meaning it can be used to create a variety of different programs and isn't specialized for any specific problems. It is versatile and easy to understand hence has become the most used language today. Python is a high-level programming language because it is easily understandable by humans.
+
+Q2. Why is Python called a dynamically typed language?
+A.)	In other languages like C, C++, Java, etc.., there is a strict declaration of variables before assigning values to them. Python don't have any problem even if we don't declare the type of variable. It states the kind of variable in the runtime of the program. So, Python is a dynamically typed language.
+
+Q3. List some pros and cons of Python programming language?
+A.)	Pro’s- The pro’s of python are it is Easy to Read, Learn and Write, Interpreted Language (hich means that Python directly executes the code line by line. In case of any error, it stops further execution and reports back the error which has occurred), Dynamically Typed (automatically assigns data type during execution), free and open source, vast library support, Portability.
+B.)	Cons- Slow speed (because it is interpreted line by line), not memory efficient, not good for mobile computing, runtime errors.
+
+Q4. In what all domains can we use Python?
+A.)	Web Development, Data Analysis, Data Science, Scientific Computing, Gaming etc..
+
+Q5. What are variable and how can we declare them?
+A.)	Python Variable is containers which store values. Python is not “statically typed”. We do not need to declare variables before using them or declare their type. A variable is created the moment we first assign a value to it. A Python variable is a name given to a memory location. It is the basic unit of storage in a program.
+Rules of creating a variable,
+•	A variable name must start with a letter or the underscore character.
+•	A variable name cannot start with a number.
+•	A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ ).
+•	Variable names are case-sensitive (name, Name and NAME are three different variables).
+•	The reserved words(keywords) cannot be used naming the variable.
+
+Q6. How can we take an input from the user in Python?
+A.)	input (): This function first takes the input from the user and converts it into a string.
+
+Q7. What is the default datatype of the value that has been taken as an input using input() function?
+A.)	The type of the returned object always will be <type ‘str’>. It does not evaluate the expression it just returns the complete statement as String.
+
+Q8. What is type casting?
+A.)	The conversion of one data type into the other data type is known as type casting in python or type conversion in python. Python supports a wide variety of functions or methods like: int(), float(), str(), ord(), hex(), oct(), tuple(), set(), list(), dict(), etc. for the type casting in python.
+
+
+Q9. Can we take more than one input from the user using single input() function? If yes, how? If no, why?
+A.)	input() function takes only one argument. Because it doesn’t use *args to input multiple strings from user. It can be coupled with split() function to take more than one argument.
+
+Q10. What are keywords?
+A.)	Python keywords are special reserved words that have specific meanings and purposes and can't be used for anything but those specific purposes. These keywords are always available—you'll never have to import them into your code.
+
+Q11. Can we use keywords as a variable? Support your answer with reason.
+A.)	Keywords are some predefined and reserved words in python that have special meanings. Keywords are used to define the syntax of the coding. The keyword cannot be used as an identifier, function, and variable name.
+
+
+Q12. What is indentation? What's the use of indentaion in Python?
+A.)	Python indentation refers to adding white space before a statement to a particular block of code. In another word, all the statements with the same space to the right, belong to the same code block. 
+Python indentation is a way of telling a Python interpreter that the group of statements belongs to a particular block of code. A block is a combination of all these statements. Block can be regarded as the grouping of statements for a specific purpose.
+
+
+Q13. How can we throw some output in Python?
+A.)	print() function is used to print or output anything in Python.
+
+Q14. What are operators in Python?
+A.)	Operators are special symbols that perform operations on variables and values.
+
+
+Q15. What is difference between / and // operators?
+A.)	/ is the division operator and // is the floor division. Floor division rounds of the result to the nearest whole number.
+
+
+Q16. Write a code that gives following as an output.
+```
+iNeuroniNeuroniNeuroniNeuron
+```
+A.)	print("'''\niNeuroniNeuroniNeuroniNeuron\n'''")
+
+
+Q17. Write a code to take a number as an input from the user and check if the number is odd or even.
+number = int(input("Enter the number: "))
+if number%2==1:
+  print("The number {} is odd".format(number))
+else:
+  print("The number {} is even".format(number))  
+
+
+Q18. What are boolean operator?
+A.)	The logical operators and, or and not are also referred to as boolean operators. While and as well as or operator needs two operands, which may evaluate to true or false, not operator needs one operand evaluating to true or false.
+
+
+Q19. What will the output of the following?
+```
+1 or 0   A.) 1
+
+0 and 0   A.) 0
+
+True and False and True  A.) False
+
+1 or 0 or 0   A.) 1
+```
+
+Q20. What are conditional statements in Python?
+A.)	Decision-making in a programming language is automated using conditional statements, in which Python evaluates the code to see if it meets the specified conditions.
+The conditions are evaluated and processed as true or false. If this is found to be true, the program is run as needed. If the condition is found to be false, the statement following the If condition is executed.
+Python has 6 conditional statements,
+1. If the statement
+
+2. If else statement
+
+3. Nested if statement
+
+4. If…Elif ladder
+
+5. Short Hand if statement
+
+6. Short Hand if-else statement
+
+
+Q21. What is use of 'if', 'elif' and 'else' keywords?
+A.)	If, elif, else are conditional statements that provide you with the decision making that is required when you want to execute code based on a particular condition. The If, elif, else statement used in Python helps automate that decision making process.
+
+
+Q22. Write a code to take the age of person as an input and if age >= 18 display "I can vote". If age is < 18 display "I can't vote".
+age = eval(input("Enter the Age: "))
+
+if age >= 18:
+  print("I can Vote")
+else:
+  print("I can't Vote")  
+	
+
+Q23. Write a code that displays the sum of all the even numbers from the given list.
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+numbers = [12,75,150,180,145,525,50]
+
+even_number_list = []
+
+for i in numbers:
+  if i%2==0:
+    even_number_list.append(i)
+print(sum(even_number_list))
+
+
+Q24. Write a code to take 3 numbers as an input from the user and display the greatest no as output.
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+num3 = float(input("Enter third number: "))
+
+if (num1 >= num2) and (num1 >= num3):
+   largest = num1
+elif (num2 >= num1) and (num2 >= num3):
+   largest = num2
+else:
+   largest = num3
+
+print("The largest number is", largest)
+
+
+Q25. Write a program to display only those numbers from a list that satisfy the following conditions
+
+- The number must be divisible by five
+
+- If the number is greater than 150, then skip it and move to the next number
+
+- If the number is greater than 500, then stop the loop
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+```
+numbers = [12, 75, 150, 180, 145, 525, 50]
+result = []
+for i in numbers:
+  if i>500:
+    break
+  elif i>150:
+    pass  
+  elif i%5==0:
+    result.append(i)
+print(result)  
+
